@@ -1,0 +1,32 @@
+{
+  "development": {
+    "username": "serenesphere_user",
+    "password": "XOqGEjR9qQdQqjIBfCmPeTdL29BUlHgL",
+    "database": "serenesphere",
+    "host": "dpg-coo8niv79t8c73b8chq0-a.oregon-postgres.render.com",
+    "port":5432,
+    "dialect": "postgres",
+    "logging": false,
+    "timezone": "+07:00",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": true
+      }
+    }
+  },
+  "test": {
+    "username": "serenesphere_user",
+    "password": "XOqGEjR9qQdQqjIBfCmPeTdL29BUlHgL",
+    "database": "serenesphere",
+    "host": "dpg-coo8niv79t8c73b8chq0-a.oregon-postgres.render.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "serenesphere_user",
+    "password": "XOqGEjR9qQdQqjIBfCmPeTdL29BUlHgL",
+    "database": "serenesphere",
+    "host": "dpg-coo8niv79t8c73b8chq0-a.oregon-postgres.render.com",
+    "dialect": "postgres"
+  }
+}

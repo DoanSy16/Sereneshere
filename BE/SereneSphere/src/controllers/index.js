@@ -1,0 +1,6 @@
+export * from './UsersController'
+export *from './AuthController'
+export *from './PostController'
+export *from './FollowController'
+export *from './CommentController'
+export *from './MessageController'
