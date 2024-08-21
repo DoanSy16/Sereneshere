@@ -6,10 +6,11 @@ module.exports = (sequelize) => {
     static associate (models) {
       // Xác định các mối quan hệ ở đây nếu cần
       User.belongsToMany(models.Role, {through: models.UserRole,foreignKey: 'user_id'});
-      User.hasMany(models.Post,{foreignKey:'user_id'})
+      User.hasMany(models.Post,{foreignKey:'user_id'});
       User.hasMany(models.Follow, { foreignKey: 'user_id', as: 'Followers' }); // Người dùng có nhiều người theo dõi
       User.hasMany(models.Follow, { foreignKey: 'follower_id', as: 'Following' }); // Người dùng theo dõi nhiều người khác
-      User.hasMany(models.Comment,{foreignKey:'user_id'})
+      User.hasMany(models.Comment,{foreignKey:'user_id'});
+      User.hasMany(models.Search,{foreignKey:'user_id'})
     }
   }
   User.init({

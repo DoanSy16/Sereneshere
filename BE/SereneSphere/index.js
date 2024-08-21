@@ -1,10 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
+
 require('dotenv').config();
 require('./src/connection_database');
+// require('./src/connection_mongodb');
 const initRoutes = require('./src/routes');
-const initSocket =require('./src/connection_socket')
+const initSocket =require('./src/connection_socket');
+
+
 
 const app = express();
 app.use(cors({
